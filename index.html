@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+   
+    <section class="container">
+        
+        
+        <h1>Code Editor📝 </h1>
+
+        <div class="editor">
+            <div class="left">
+                <label for=""><i class='bx bxl-html5'></i>HTML</label>
+                <textarea onkeyup="run()" spellcheck="false" id="html-code"></textarea>
+
+                <label><i class='bx bxl-css3'></i>CSS</label>
+                <textarea onkeyup="run()"spellcheck="false"  id="css-code"></textarea>
+
+                <label for=""><i class='bx bxl-javascript'></i>JavaScript</label>
+                <textarea onkeyup="run()" spellcheck="false"  id="js-code"></textarea>
+            </div>
+
+            <div class="right">
+                <label for=""><i class='bx bx-play'></i>Output</label>
+                <iframe id="output"></iframe>
+                <!-- <button onclick="myFunction()">Try it</button> -->
+            </div>
+            <!-- <div id="myDiv" class=""> <h1> Bismillahi</h1>
+
+            
+            </div>
+
+        css
+            h1{
+                color: red
+            } -->
+<!-- #myDIV{
+    width:300px;
+    height: 300px;
+    background-color: coral;
+    color: white;
+} -->
+
+<!-- js -->
+ <!-- function myFunction(){
+    document.getElementById('myDIV').style.backgroundColor = 'lightblue';
+ } -->
+
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
